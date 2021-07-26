@@ -17,7 +17,7 @@ public class MVCtestsMain {
         NumberView view = new NumberView();
         NumberController controller = new NumberController(model, view);
 
-        controller.updateNumber();
+        controller.updateNumberPlus();
 
         JFrame aJFrame = new JFrame("Test simple de MVC");
         aJFrame.setLayout(new BorderLayout());
@@ -35,8 +35,8 @@ public class MVCtestsMain {
         aIncrementButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //aView.setText("increment pushed");
-                aView.setText(controller.updateNumber());
+                aView.setText("increment pushed");
+                aView.setText(controller.updateNumberPlus());
 
             }
         });
@@ -45,6 +45,7 @@ public class MVCtestsMain {
             @Override
             public void actionPerformed(ActionEvent e) {
                 aView.setText("decrement pushed");
+                aView.setText(controller.updateNumberMinus());
             }
         });
 

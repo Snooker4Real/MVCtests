@@ -16,15 +16,25 @@ public class NumberController {
         model.setNumber(number);
     }
 
-    public int getMyNumber(){
-        return model.getNumber();
+    public int getMyNumberPlus(){
+        return model.getNumberPlus();
     }
 
-    public String updateNumber(){
-        int a = model.getNumber();
+    public int getMyNumberMinus(){
+        return model.getNumberMinus();
+    }
+
+    public String updateNumberPlus(){
+        int a = model.getNumberPlus();
         String s = String.valueOf(a);
         view.printNumber(s);
         return s;
     }
 
+    public String updateNumberMinus(){
+        int a = model.getNumberMinus();
+        String s = String.valueOf(a);
+        view.printNumber(s);
+        return s;
+    }
 }
