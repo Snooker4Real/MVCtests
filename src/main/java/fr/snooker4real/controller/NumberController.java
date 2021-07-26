@@ -3,6 +3,8 @@ package fr.snooker4real.controller;
 import fr.snooker4real.model.Number;
 import fr.snooker4real.view.NumberView;
 
+import java.awt.event.KeyEvent;
+
 public class NumberController {
     private Number model;
     private NumberView view;
@@ -37,4 +39,5 @@ public class NumberController {
         view.printNumber(s);
         return s;
     }
+
 }

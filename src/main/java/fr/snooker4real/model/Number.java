@@ -1,5 +1,7 @@
 package fr.snooker4real.model;
 
+import java.awt.event.KeyEvent;
+
 public class Number {
 
     private int myNumber;
@@ -17,9 +19,9 @@ public class Number {
         return myNumber++;
     }
 
-
-
     public void setNumber(int myNumber) {
         this.myNumber = myNumber;
     }
+
+
 }
